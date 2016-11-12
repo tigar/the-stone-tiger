@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {margin:0; padding:0;}
+
+html,
+body {
+    min-height: 100%;
+    height: 98.1%;
+    width: 100%;
+}
+
+#wrapper {
+    min-height:100%;
+    height: auto;
+    margin: 0 auto -100px;
+    position: relative;
+    width: inherit;
+}
+
+/* Header */
+#banner {
+    width: inherit;
+    min-width: 100%;
+    height: 100px;
+    padding-bottom: 25px;
+    line-height: 125px;
+    position:relative;
+    background-color: #707066; /*Carleton Blue*/
+}
+
+#bannerFont {
+    font-family: "Open Sans", sans;
+    font-size: 40px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#bannerFont:hover{
+    color: #FFC721;
+}
+
+#logo {
+    float: left;
+    margin-top: 15px;
+    margin-left: 20px;
+    width: 90px;
+}
+
+#menu{
+    display:inline;
+    float:right;
+    position: relative;
+}
+
+.nav ul {
+    display: inherit;
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    background-color: #0b5091; /*Carleton blue*/
+}
+
+.nav li {
+    display: inherit;
+    list-style-type: none;
+    float: left;
+}
+
+.nav li a {
+    color: white;
+    display: block;
+    font-family:"Open Sans", Georgia;
+    font-size: 20px;
+    line-height: 132px;
+    padding-right: 35px;
+    text-align: center;
+    view: inherit;
+}
+
+.nav li a:hover{
+    color: #FFED1C;
+    display: inherit;
+    visibility:inherit;
+}
+
+/* Content */
+#main {
+    min-width: 100%;
+    max-width: 100%;
+    max-height:100%;
+    overflow:auto;
+    padding-bottom: 100px;
+}
+
+#push {
+    height: 100px;
+}
+
+/*Sticky footer*/
+#footer {
+    position: relative;
+    width: inherit;
+    height: 100px;
+    margin: 0 auto;
+    min-width: 577px;
+    font-size: 23px;
+    padding-top: 40px;
+    line-height: 60px;
+    text-align:center;
+    background-color: black;
+    color:white;
+}
+
+/* Changes margins depending on browser size*/
+@media (min-width:1796px){
+    .view {
+        margin-right: 3%;
+    }
+}
+
+@media (max-width:1651px){
+    .view {
+        margin-top: 85px;
+        margin-left: 85px;
+    }
+}
+
+@media (min-width:1339px) {
+    .dropdown{
+      display: none;
+    }
+}
+
+
+/* Replaces nav bar with button at smaller browser size*/
+@media (max-width:1338px) {
+    #menu {
+        display: none;
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown{
+        position: relative;
+        display: inline-block;
+        float: right;
+    }
+
+    /* Navbutton */
+    .dropbtn {
+        background-color: rgba(255,214,0,1);
+        color: white;
+        position: relative;
+        float:right;
+        display: inline-block;
+        margin-top: 35px;
+        margin-right: 4vw;
+        padding: 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    /* Dropdown Content (Hidden by Default)*/
+    .dropdown-content {
+        z-index: 999;
+        display: none;
+        position: absolute;
+        margin-top: 80px;
+        background-color: #f9f9f9;
+        min-width: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+    /* Links inside the dropdown*/
+    .dropdown-content a {
+        font-family: "Open Sans", Georgia;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        line-height: 20px;
+        cursor: pointer;
+        display: block;
+    }
+
+    /* Change color of dropdown links on hover*/
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+      }
+
+    /* Show the dropdown menu on hover*/
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Change the background color of the dropdown button when the dropdown content is shown*/
+    .dropdown:hover .dropbtn {
+        background-color: #FFC721;
+    }
+
+}
+
+@media (max-width: 1046px){
+    table{
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:754px) {
+    .dropdown{
+        display: none;
+    }
+
+    #backButton {
+        border-radius: 5px;
+        margin-top: 20px;
+        margin-left: 20px;
+        padding: 5px 20px;
+    }
+
+    table {
+        width: 500px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 656px) {
+    #banner {
+        padding-bottom: 15px;
+        line-height: 120px;
+    }
+
+    #bannerFont {
+       font-size: 33px;
+       margin-left: 15px;
+       margin-right: 0;
+    }
+
+    #logo {
+      width: 85px;
+      margin-left: 15px;
+    }
+
+    #main {
+      padding-right: 0;
+    }
+
+    .view {
+      margin-top: 50px;
+      float: left;
+      border: 10px solid #fff;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      -webkit-box-shadow: 1px 1px 2px #e6e6e6;
+      -moz-box-shadow: 1px 1px 2px #e6e6e6;
+      box-shadow: 1px 1px 2px #e6e6e6;
+      cursor: default;
+    }
+
+    #footer {
+        position: relative;
+        height: 100px;
+        min-width: 563px;
+        margin: 0 auto;
+        font-size: 20px;
+        padding-top: 40px;
+        line-height: 60px;
+        text-align:center;
+        background-color: black;
+        color:white;
+    }
+}
