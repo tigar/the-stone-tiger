@@ -89,6 +89,11 @@ body {
   text-decoration: none;
 }
 
+.ref {
+  color: #2D5EFF;
+  text-decoration: none;
+}
+
 
 /* Content */
 #main {
