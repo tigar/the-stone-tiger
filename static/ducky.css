@@ -83,14 +83,12 @@ body {
     display: inherit;
     visibility:inherit;
 }
-a {
+
+.homelink {
   color: #FFFFFF;
   text-decoration: none;
 }
-a:visited {
-    color: #FFFFFF;
-    text-decoration: none;
-}
+
 
 /* Content */
 #main {
