@@ -121,6 +121,10 @@ li {
     height: 100px;
 }
 
+#spush{
+  height: 10px;
+}
+
 /*Sticky footer*/
 #footer {
     position: relative;
