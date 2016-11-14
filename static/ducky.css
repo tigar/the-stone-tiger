@@ -83,6 +83,14 @@ body {
     display: inherit;
     visibility:inherit;
 }
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
 
 /* Content */
 #main {
