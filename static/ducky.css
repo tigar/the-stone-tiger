@@ -87,6 +87,21 @@ body {
 /* Content */
 #main {
   padding-top: 10px;
+  margin-left: 30px;
+  width: 100%;
+}
+
+p {
+  margin: 1.75ex 0ex 0ex 0ex;
+}
+
+ul {
+  margin: 0ex;
+  padding-left: 2.5em;
+}
+
+li {
+  margin: 1ex 0ex 0ex 0ex;
 }
 
 #push {
