@@ -14,18 +14,16 @@
             <div id="menu">
                 <ul class="nav">
                     <li class="nav"><a class="nav" href="history.html">History</a></li>
-                    <li class="nav"><a class="nav" href="the_tech.html">The Tech</a></li>
                     <li class="nav"><a class="nav" href="impacts.html">Impacts</a></li>
                     <li class="nav"><a class="nav" href="defenses.html">Defenses</a></li>
                     <li class="nav"><a class='nav' href="the_future.html">The Future</a></li>
-                    <li class="nav"><a class='nav' href="references.hmtl">References</a></li>
+                    <li class="nav"><a class='nav' href="references.html">References</a></li>
                 </ul>
             </div>
             <div class="dropdown">
                 <button class="dropbtn">Menu</button>
                 <div class="dropdown-content">
                     <a class="nav" href="history.html">History</a>
-                    <a class="nav" href="the_tech.html">The Tech</a>
                     <a class="nav" href="impacts.html">Impacts</a>
                     <a class="nav" href="defenses.html">Defenses</a>
                     <a class='nav' href="the_future.html">The Future</a>
@@ -37,8 +35,11 @@
           <div id="main">
               <img id="WIP" src="../static/wip.jpg"/>
               <h1>The Basics</h1>
-              <p>The Rubber Ducky is a microchip with a USB connector that pretends to be a keyboard. The attacker plugs it into a port on the target computer, and the Ducky runs a premade script to execute whichever commands the attacker desires. The computer sees these commands as legitimate input from the keyboard, which lets the attacker act as the user, bypassing most normal security.</p>
+              <p>The Rubber Ducky is a microchip with a USB connector that pretends to be a keyboard. The attacker plugs it into a port on the target computer, and the Ducky runs a script to execute whichever commands the attacker desires. The computer sees these commands as legitimate input from the keyboard (the Ducky pretends to be typing them), which lets the attacker act as the user, bypassing most normal security.</p>
               <img id="indoc" src="../static/duckyUSB.jpg"/>
+              <p>At its most basic level, this works because keyboards, and USBs in general, are trusted to be what they say they are. The computer has no way of inherently recognizing the difference between a USB, a keyboard, and a mouse; they all plug into the same port. Legitimate devices will send a code indicating what they are, but this opens the door for the Ducky to claim that it is something it is not.</p>
+              <img id="indoc" src="../static/payload.jpg"/>
+              <p>A variety of premade scripts are available online, for everything from installing backdoors and stealing passwords to changing someone's background as a prank. The Rubber Ducky is simple to setup, easily configurable, and extremely powerful.
           </div>
         </div>
 
