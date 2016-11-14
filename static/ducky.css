@@ -83,14 +83,17 @@ body {
     display: inherit;
     visibility:inherit;
 }
-a {
+
+.homelink {
   color: #FFFFFF;
   text-decoration: none;
 }
-a:visited {
-    color: #FFFFFF;
-    text-decoration: none;
+
+.ref {
+  color: #2D5EFF;
+  text-decoration: none;
 }
+
 
 /* Content */
 #main {
@@ -105,9 +108,8 @@ h3 {
   margin: 1.75ex 0ex 0ex 0ex;
 }
 p {
-  margin: 1.75ex 0ex 0ex 0ex;
-  padding-left: 100px;
-  padding-right: 100px;
+  margin: 1.75ex 0ex 0ex 18ex;
+  width: 75%;
   text-align: left;
 }
 

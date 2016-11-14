@@ -10,7 +10,7 @@
     <div id="wrapper">
         <div id="banner">
             <img id="logo" src="../static/duck.png"/>
-            <font id="bannerFont" color="white"><a href="index.html">Rubber Ducky</a></font>
+            <font id="bannerFont" color="white"><a href="index.html" class="homelink">Rubber Ducky</a></font>
             <div id="menu">
                 <ul class="nav">
                     <li class="nav"><a class="nav" href="history.html">History</a></li>
@@ -33,13 +33,12 @@
           </div>
 
           <div id="main">
-              <img id="WIP" src="../static/wip.jpg"/>
               <h1>The Basics</h1>
-              <p>The Rubber Ducky is a microchip with a USB connector that pretends to be a keyboard. The attacker plugs it into a port on the target computer, and the Ducky runs a script to execute whichever commands the attacker desires. The computer sees these commands as legitimate input from the keyboard (the Ducky pretends to be typing them), which lets the attacker act as the user, bypassing most normal security.</p>
+              <p>The Rubber Ducky is a microchip with a USB connector that pretends to be a keyboard and connect to any PC with an active USB port. The attacker plugs it into a USB port on the target computer, and the Ducky automatically boots and runs a script to execute whichever commands the attacker has programmed to the chip. The computer reads these commands as legitimate input from a keyboard (the Ducky pretends to be typing them), which lets the attacker act as the user, bypassing most normal security.</p>
               <img id="indoc" src="../static/duckyUSB.jpg"/>
-              <p>At its most basic level, this works because keyboards, and USBs in general, are trusted to be what they say they are. The computer has no way of inherently recognizing the difference between a USB, a keyboard, and a mouse; they all plug into the same port. Legitimate devices will send a code indicating what they are, but this opens the door for the Ducky to claim that it is something it is not.</p>
+              <p>At its most basic level, Ducky works because keyboards, and USB devices in general, are trusted to be what they say they are. The computer has no way of inherently recognizing the difference between a USB, a keyboard, and a mouse; they all plug into the same port. Legitimate devices will send a code (USB HID Compliant code, described in more detail in <a href="history.html" class="ref"><u>History</u></a> indicating what they are, but this opens the door for the Ducky to claim that it is something it is not.</p>
               <img id="indoc" src="../static/payload.jpg"/>
-              <p>A variety of premade scripts are available online, for everything from installing backdoors and stealing passwords to changing someone's background as a prank. The Rubber Ducky is simple to setup, easily configurable, and extremely powerful.
+              <p>A variety of premade scripts are available <a href="https://ducktoolkit.com/online" class="ref">online</a>, for everything from installing backdoors and stealing passwords to changing someone's background as a prank. The Rubber Ducky is simple to setup, easily configurable, and extremely powerful.
           </div>
         </div>
 
