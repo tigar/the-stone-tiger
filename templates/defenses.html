@@ -37,6 +37,11 @@
               <p>Defenses agains the Ducky can take several forms, though each can be bypassed with some effort, so a combination of several methods is necessary to ensure security.</p>
               <h3>Physical Access</h3>
               <p>The Ducky requires physical access to the target machine, or specifically, a USB port on the target machine. It doesn't have to be consistent access, just long enough for the script to run and the attacker to remove or hide the Ducky. Physical security is necessary to prevent an attack from gaining illicit access to the machine, and training against social engineering will help prevent more sophisticated attackers from talking their way into access. </p>
+              <img id="indoc" source="socialEngineering.jpg" />
+              <p>Furthermore, ensuring that your device is locked whenever you leave it unattended goes a long way towards ensuring its security. The Rubber Ducky can be used to guess passwords to attempt to break into the device, but this both takes away from the time the attacker has before you return, and outright fails in the case of strong enough passwords.</p>
+              <h3>Verifying Devices</h3>
+              <p>Beyond preventing all physical access to the target machine, a method of verifying the devices allowed to connect to it would provide another defense against the Ducky. Unfortunately, the HID standard does not contain any mechanism for this. The best current way to accomplish this is with group policies, and whitelisting or blacklisting USB devices. However, even this can be circumvented with time, as the Ducky gets to control what information it sends to the computer, so any white or blacklist is inherently limited by the GIGO rule: Garbage in, Garbage out.</p>
+
           </div>
 
         </div>
